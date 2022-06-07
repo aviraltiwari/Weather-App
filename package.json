@@ -1,0 +1,12 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "A weather app created in HTML, CSS and JavaScript",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Aviral Tiwari",
+  "license": "ISC"
+}

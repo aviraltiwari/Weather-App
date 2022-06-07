@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="src/style/style.css" />
+    <script type="module" src="./src/scripts/app.js" defer></script>
+    <script type="module" src="src/scripts/config.js" defer></script>
+</head>
+
+<body>
+    <!-- <div class="name">Av</div> -->
+    <div class="card-container">
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search" />
+
+            <button>
+                <box-icon name='search'></box-icon>
+            </button>
+        </div>
+        <div class="autosuggestions">
+        </div>
+        <div class="weather">
+            <h2>Weather in <span class="city-name">City</span></h2>
+            <div class="temperature">
+                <h1>
+                    <span class="temperature-value">0</span>
+                    <span class="temperature-type">°C</span>
+                </h1>
+                <img class="weather-icon" src="" />
+                <div class="description">Feels Like <span class="feels-like"></span></div>
+                <div class="description">Humidity <span class="humidity"></span>%</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

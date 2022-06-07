@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://use.typekit.net/oms1jfh.css");
+
+body {
+    background: url('https://source.unsplash.com/1920x1080/?landscape') no-repeat center center fixed;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    background: #909090d0;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    padding: 0.6em;
+    border-radius: 100%;
+    margin: 0.5em;
+    background: #4040407b;
+    color: white;
+}
+
+input.search-bar {
+    outline: none;
+    padding: 0.5em 2em;
+    border-radius: 30px;
+    border: none;
+    background: #ffffff4f;
+    width: 100%;
+    color: white;
+}
+
+input.search-bar:focus {
+    box-shadow: 0.5px 1px 10px 4px #868080;
+    transition: 1s;
+}
+
+.name {
+    font-family: reenie-beanie, sans-serif;
+    /* font-weight: 500; */
+    font-style: normal;
+    font-size: 200px;
+    color: white;
+}
+
+.weather {
+    z-index: 0;
+    display: none;
+}
+
+.temperature {
+    font-family: inherit;
+    text-align: center;
+    color: white;
+}
+
+.autosuggestions {
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 420px;
+    margin-top: 10px;
+    opacity: 0.9;
+    /* display: none; */
+}
+
+.autosuggestions>li {
+    list-style: none;
+    padding: 0.5em;
+    border-bottom: #bebebe 0.5px solid;
+}
+
+.autosuggestions>.error {
+    color: red;
+}
+
+.feels-like,
+.humidity {
+    font-weight: bold;
+    font-size: 1.5em;
+}
